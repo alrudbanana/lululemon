@@ -24,6 +24,7 @@ $(function(){
             headerLogoChangeReset();
         }
     });
+    //
     // 무한 슬라이드
     var wid = $('.con3 .sliderWrapper div').outerWidth();
     var num = $('.con3  .sliderWrapper div').length;

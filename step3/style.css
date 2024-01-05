@@ -74,7 +74,7 @@ input {
 
 /*-------------------------------header*/
 .visualWrap {
-    background-image: url(./images/banner-01.jpg);
+    background-image: url(../images/banner-01.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -441,7 +441,7 @@ input {
 
 /*-----------------------------con6*/
 .con6Wrap {
-    background: url(./images/na_dec23_wk4_HO23_3_1_D.jpg);
+    background: url(../images/na_dec23_wk4_HO23_3_1_D.jpg);
     background-attachment: fixed;
     padding: 150px 0;
     background-size: cover;
@@ -801,9 +801,6 @@ input {
     .mo-footer .flex ul:first-child{
         border: none;
     }
-    /* .flex ul:last-child{
-        border-bottom: 1px solid #F0F0F0;
-    } */
     .mo-footer .flex ul li{
         font-size: 20px;
     }
@@ -814,5 +811,10 @@ input {
     .mo-footer .flex ul .sns-icon i{
         margin-right: 8px;
     }
-    
+    /* side-nav */
+    .side-nav{
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+    }
 }
