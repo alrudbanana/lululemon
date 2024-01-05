@@ -1,0 +1,166 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Red+Hat+Display:wght@300;400;500;700&display=swap');
+
+/* -------------------reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 18px;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+input{
+    outline: none;
+    border: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+/* ------------------------------------header */
+.visualWrap{
+    background-color: #ccc;
+    background-image: url(../images/banner-01.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border: 1px solid red;
+}
+.headerWrap{
+    border-bottom: 1px solid #eee;
+}
+.headerWrap header{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 10px 0;
+    align-items: center;
+    position: relative;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.headerWrap header .gnb{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 0 30px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.headerWrap .search{
+    position: relative;
+}
+.headerWrap .search input{
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 3px 15px;
+}
+.headerWrap .search i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.visualWrap .txt-box{
+    border: 1px solid red;
+    margin: 300px auto 100px;
+    width: 35%;
+    text-align: center;
+}
+.visualWrap .txt-box p {
+    margin: 20px 0;
+}
+.visualWrap .txt-box a{
+    border: 1px solid #fff;
+    padding: 5px 30px;
+    display: inline-block;
+    border-radius: 20px;
+}
+/* ------------------------------------header style */
+header img{
+    width: 163px;
+    height: 28px;
+    object-fit: cover;
+}
+header .gnb{
+    color: #fff;
+}
+.txt-box{
+    color: #fff;
+}
+/* ------------------------------------content */
+.contentWrap{
+    border: 3px solid red;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.wid-cen{
+    width: 1280px;
+    margin: 0 auto;
+    border: 3px solid #000;
+}
+.con-title{
+    margin: 0 0 15px; /*아래에 왜....마진을 준것이었쥐....*/
+    text-align: center;
+    color: #000;
+}
+.content{
+    margin: 100px auto;
+}
+.content > div{
+    margin: 0 auto 70px;
+}
+.content >div:last-child{
+    margin:  0 auto;
+}
+/* ------------------------------------content style */
+.gender{
+    text-align: center;
+}
+.gender span{
+    font-weight: 700;
+}
+.gender:first-child{
+    margin-right: 20px;
+}
+/* ------------------------------------footer */
+.footerWrap{
+    background-color: pink;
+}
+footer{
+    width: 1280px;
+    border: 1px solid red;
+    margin:  0 auto;
+}
+.sns-box{
+    margin: 0 auto;
+    border: 1px solid red;
+    justify-content: flex-end;
+    gap: 0 10px;
+}
+/* pc에선 모바일 html 이 안보이게  */
+.mobile{
+    display: none;
+}

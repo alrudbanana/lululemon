@@ -1,0 +1,27 @@
+@media screen and (min-width:360px) and (max-width:767px){
+    /* 모바일 해상도 360px 이상부터 767이하 까지(테블릿전까지) */
+    /* 모바일에서 안보이게 */
+    .pc{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    /*-------------------------------header*/
+    .headerWrap header{
+        width: 100%;
+    }
+    .icon-box > div{
+        display: inline-block;
+    }
+    
+    /*-------------------------------content*/
+    .wid-cen{
+        width: 100%;
+    }
+    /*-------------------------------content*/
+    footer{
+        width: 100%;
+    }
+
+}
