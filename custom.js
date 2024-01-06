@@ -2,8 +2,8 @@ $(function(){
     //mobile- 헤더에 호버가 될경우 로고의 이미지의 경로를 바꿔준다 
     const header = $('.headerWrap');
     const headerLogo =  $('.only-mobile')
-    const headerLogoSrc = "../images/logo.png";
-    const headerLogoSrcReset = "../images/mobile_logo.png";
+    const headerLogoSrc = "./images/logo.png";
+    const headerLogoSrcReset = "./images/mobile_logo.png";
     //아이콘 
     const icon = $('.icon-wrapper i')
     function headerLogoChange(){
