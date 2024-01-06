@@ -16,14 +16,37 @@ $(function(){
         $(headerLogo).attr("src",headerLogoSrcReset)
         $(icon).css('color','#fff');
     }
-    $(header).on({
-        'touchstart': function(){
-            headerLogoChange();
-        },
-        'touchend': function(){
+    $(header).hover(function(){
+        headerLogoChange();},
+        function(){
             headerLogoChangeReset();
+    })
+    const sideNav = $('.side-nav-container')
+    // 햄버거 버튼을 누르면 sidbar 보이게 
+    $('.ham-menu').click(function(){
+        sideNav.addClass('on')
+    })
+    $('.close').click(function(){
+        sideNav.removeClass('on')
+    })
+    // 메뉴 탭 버튼 
+    var gnb_li = $('#side-nav > li');
+    gnb_li.on('click', function(){
+        var isOn = $(this).children('a').hasClass('on');
+        if(isOn){
+            //다시 누르면 닫힘
+            $(this).children('a').removeClass('on');
+            $(this).children('.sub').stop().slideUp();
+        }else{
+            //이미 열린탭을 닫음 
+            gnb_li.children('a').removeClass('on');
+            gnb_li.children('.sub').stop().slideUp();
+            //누른 자식들에게 창을 열기 
+            $(this).children('a').addClass('on');
+            $(this).children('.sub').stop().slideDown();
         }
-    });
+    })
+    
     // 무한 슬라이드
     var wid = $('.con3 .sliderWrapper div').outerWidth();
     var num = $('.con3  .sliderWrapper div').length;
@@ -102,6 +125,4 @@ $(function(){
         }
         
     })
-
-    
 })
