@@ -828,7 +828,7 @@ input {
         background-color: #fff;
         position: fixed;
         top: 0;
-        left: -400px;
+        left: -500px;
         transition: 0.5s;
         z-index: 100;
     }
