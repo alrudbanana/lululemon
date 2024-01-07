@@ -828,7 +828,7 @@ input {
         background-color: #fff;
         position: fixed;
         top: 0;
-        left: -400px;
+        left: -500px;
         transition: 0.5s;
         z-index: 100;
     }
@@ -843,6 +843,7 @@ input {
         left: 20px;
     }
     .side-header .logo{
+        
         padding: 10px 0 10px 15px;
     }
     .side-header .logo img{
@@ -907,7 +908,7 @@ input {
         color: #222;
         padding: 15px 30px;
     }
-    .nav-footer{
+    /* .nav-footer{
         font-family: 'Noto Sans KR', sans-serif;
         background-color: #F4F4F6;
         margin-top: 0px;
@@ -931,5 +932,5 @@ input {
     .nav-footer .last-footer > p{
         border: 1px solid #000;
         padding: 10px;
-    }
+    } */
 }

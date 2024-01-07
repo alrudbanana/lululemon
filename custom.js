@@ -26,7 +26,7 @@ $(function(){
     $('.ham-menu').click(function(){
         sideNav.addClass('on')
     })
-    $('.close').click(function(){
+    $('.close-icon').click(function(){
         sideNav.removeClass('on')
     })
     // 메뉴 탭 버튼 
